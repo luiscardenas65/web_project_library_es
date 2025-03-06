@@ -9,8 +9,7 @@
     <meta name="author" content="luis david cardenas beltran" />
     <meta name="keywords" content="Cafe,especialidades,tripleten" />
     <title>Cafeteria</title>
-    <link rel="stylesheet" href="./vendor/normalize.css" />
-    <link rel="stylesheet" href="./pages/index.css" />
+
     <link rel="shortcut icon" href="favicon.ico" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -24,6 +23,8 @@
       href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
+
+    <link rel="stylesheet" href="./pages/index.css" />
   </head>
   <body>
     <div class="page">
@@ -40,7 +41,7 @@
             <li class="nav__link">
               <a href="#reservation">Reservar una mesa</a>
             </li>
-            <li class="nav__link"><a href="">Contactos</a></li>
+            <li class="nav__link"><a href="#footer">Contactos</a></li>
           </ul>
         </nav>
         <h1 class="header__title">
@@ -113,7 +114,7 @@
         <section class="reservation" id="reservation">
           <h2 class="reservation__title">Reservar una mesa</h2>
           <form class="reservation__form form">
-            <fieldset class="form__fildset">
+            <fieldset class="form__fieldset">
               <label for="name" class="form__label">Nombre</label>
               <input
                 type="text"
@@ -169,8 +170,43 @@
           </form>
         </section>
       </main>
-
-      <footer id="footer" class="footer"></footer>
+      <footer id="footer" class="footer">
+        <div class="footer__content">
+          <div class="footer__logo">
+            <img src="images/logo_coffeeshop_light.svg" alt="logo tripleten" />
+          </div>
+          <div class="footer__circle"></div>
+          <div class="footer__social">
+            <h2 class="footer__social-heading">Redes socíales</h2>
+            <ul class="footer__list">
+              <li class="footer__list-item">
+                <a href="" class="footer__social-link">
+                  <img
+                    src="images/facebook_white.svg"
+                    alt=""
+                    class="footer__social-icon"
+                  /> </a
+                >facebook
+              </li>
+            </ul>
+            <ul class="footer__list">
+              <li class="footer__list-item">
+                <a href="" class="footer__social-link">
+                  <img
+                    src="images/instagram_white.svg"
+                    alt=""
+                    class="footer__social-icon"
+                  /> </a
+                >instagram
+              </li>
+            </ul>
+          </div>
+        </div>
+        <p class="footer__copyright">
+          <img src="images/copyright.png" alt="" class="footer__social-icon" />
+          2025 Luis David Cardenas beltran
+        </p>
+      </footer>
       <script></script>
     </div>
   </body>
